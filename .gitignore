@@ -1,0 +1,56 @@
+# === Secrets / 認証情報 — 絶対にコミットしない ===
+auth.json
+*.pem
+*.key
+.env
+.env.*
+!.env.example
+
+# === Magento Open Source 標準の除外(2.4.x の .gitignore 相当) ===
+/app/etc/env.php
+/app/etc/config.php
+/generated/*
+!/generated/.htaccess
+/pub/media/*
+!/pub/media/.htaccess
+/pub/static/*
+!/pub/static/.htaccess
+/var/*
+!/var/.htaccess
+/var/log/*
+
+# Magento 本体(Composer で導入する想定。コアファイルはコミットしない場合に有効化)
+# /vendor/
+# /lib/internal/
+# /pub/index.php
+# 上記はプロジェクト方針が固まったら調整する
+
+# Composer
+/composer.phar
+
+# === ローカルツール / OS / エディタ ===
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+*.iml
+.vscode/*
+!.vscode/extensions.json
+*.log
+*.bak
+*.tmp
+*~
+
+# === Node(テーマビルド等で使う場合) ===
+/node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# === Claude Code ===
+# .claude/settings.local.json はチーム共有用にコミット対象とする(慎重モード設定)
+# 個人ごとの上書きが必要になったら .claude/settings.local.local.json 等を別途 ignore する
+.claude/.cache/
+
+# === Mock 連携データの実値(雛形 *.example.json のみコミット) ===
+# /mocks/**/data/*.json
+# !/mocks/**/data/*.example.json

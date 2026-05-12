@@ -16,7 +16,7 @@ NOVA HOME Electronics デモの段階的ロードマップ。各 Phase は完了
 - ☑ docs/LEARNING_LOG.md 作成(テンプレート)
 - ☑ docs/ARCHITECTURE.md 作成(初期設計メモ)
 - ☑ docs/SKILL_NOTES.md 作成(学習トピックの一覧と自己整理メモ)
-- ☐ .gitignore 作成(`var/`, `pub/static/`, `pub/media/`, `generated/`, `app/etc/env.php`, `auth.json`, `.env` などを除外)
+- ☑ .gitignore 作成(`var/`, `pub/static/`, `pub/media/`, `generated/`, `app/etc/env.php`, `app/etc/config.php`, `auth.json`, `.env` などを除外)
 
 **ゴール**: 公開リポジトリとして目的・ルール・計画が伝わる状態になっていること。
 
