@@ -33,6 +33,23 @@ AIエージェント(Claude Code)と作業した内容を残す学習ログ。
 
 ## エントリ
 
+### 2026-05-12 — Phase 0 完了(ドキュメント整備一式 + .gitignore)
+
+- **Date**: 2026-05-12
+- **Topic**: 初期ドキュメントと Claude Code 作業ルール、`.gitignore` の整備が完了し、リモートへ push
+- **Phase**: Phase 0(完了)
+- **Goal**: 公開リポジトリとして目的・進め方・作業ルール・ロードマップ・ログの仕組みが揃った状態にする
+- **Files changed**: `README.md` / `CLAUDE.md` / `.claude/settings.local.json` / `.gitignore` / `docs/PROJECT_OVERVIEW.md` / `docs/ROADMAP.md` / `docs/LEARNING_LOG.md` / `docs/ARCHITECTURE.md` / `docs/SKILL_NOTES.md`
+- **What was implemented**:
+  - 初期ドキュメント一式を作成し、内容を学習・スキルアップ目的に統一(仕事・案件アサイン寄りの記述は排除)
+  - ROADMAP に Phase 7「実運用を意識した補強」を追加し、「このリポジトリは学習・検証用デモであって本番システムではない」というスタンスを明文化
+  - `.gitignore` を追加(秘密情報の除外 + Magento 2.4.x 標準の除外)
+  - コミット: `docs: 初期ドキュメント一式を整備` / `chore: .gitignore を追加` の 2 件を作成 → リモートへ push 済み
+- **What was verified**: `git log` でコミット内容を確認。`grep -i` で仕事寄り用語が残っていないことを確認。コード実装なしのため動作確認は対象外。
+- **Errors / Issues**: なし(Git の LF→CRLF 警告のみ。Windows 環境のため想定内)
+- **Fixes**: なし
+- **Notes(学び・気づき)**: Phase 0 は「叩き(初版)」として完了。次は Phase 1(Magento Open Source ローカル環境構築・Docker 構成検討)。再開時はまずこのログと ROADMAP を読み直すこと。
+
 ### 2026-05-12 — ドキュメントの方針調整 + Phase 7 追加(Phase 0)
 
 - **Date**: 2026-05-12

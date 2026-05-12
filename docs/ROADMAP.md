@@ -6,7 +6,7 @@ NOVA HOME Electronics デモの段階的ロードマップ。各 Phase は完了
 
 ---
 
-## Phase 0 — ドキュメント整備 ◐
+## Phase 0 — ドキュメント整備 ☑(2026-05-12 完了・push 済み)
 
 - ☑ README.md 作成
 - ☑ CLAUDE.md 作成(Claude Code 作業ルール)
